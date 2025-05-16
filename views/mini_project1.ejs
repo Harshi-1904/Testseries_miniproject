@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/miniproject.css">
+    <link rel="stylesheet" href="/css/miniproject1.css">
+    <title>Test Series</title>
+</head>
+<body>
+    <section id="courses" class="courses">
+        <h2 class="heading" style="color: blue;">Test Series</h2>
+        <div class="course-container">
+            <div class="course-card">
+                <img src="/css/os.jpg">
+                <!-- <h3 class="sub-name">Operating Systems</h3> -->
+                <h3 class="sub-name">OS</h3>
+                <!-- <a href="/os"><button class="start-btn" >Start</button></a> -->
+                <a href="/os/<%= user.name %>" class="start-btn">Start</a>
+                <!-- <button class="start-btn" onclick="startQuiz('<%= user.name %>', 'os')">Start</button> -->
+                <!-- <button class="start-btn">Start</button> -->
+                <!-- <a href="/os/<%= user.name %>" class="start-btn btn btn-primary" data-category="os">Start</a> -->
+
+            </div>
+            <div class="course-card">
+                <img src="/css/cd.jpg">
+                <h3 class="sub-name">Compiler Design</h3>
+                <!-- <button class="start-btn">Start</button> -->
+                <a href="/cd/<%= user.name %>" class="start-btn">Start</a>
+            </div>
+            <div class="course-card">
+                <img src="/css/coa.jpg">
+                <h3 class="sub-name">Computer Organization & Architecture</h3>
+                <!-- <button class="start-btn">Start</button> -->
+                <a href="/coa/<%= user.name %>" class="start-btn">Start</a>
+            </div>
+            <div class="course-card">
+                <img src="/css/cn.jpg">
+                <h3 class="sub-name">Computer Networks</h3>
+                <!-- <button class="start-btn">Start</button> -->
+                <a href="/cn/<%= user.name %>" class="start-btn">Start</a>
+            </div>
+            <div class="course-card">
+                <img src="/css/ds.jpg">
+                <h3 class="sub-name">Data Structures</h3>
+                <!-- <button class="start-btn">Start</button> -->
+                <a href="/c/<%= user.name %>" class="start-btn">Start</a>
+            </div>
+            <div class="course-card">
+                <img src="/css/c.jpg">
+                <h3 class="sub-name">C Programming</h3>
+                <!-- <button class="start-btn">Start</button> -->
+                <a href="/ds/<%= user.name %>" class="start-btn">Start</a>
+            </div>
+            <div class="course-card">
+                <img src="/css/daa.jpg">
+                <h3 class="sub-name">Design & Analysis of Algorithms</h3>
+                <!-- <button class="start-btn">Start</button> -->
+                <a href="/daa/<%= user.name %>" class="start-btn">Start</a>
+            </div>
+            <div class="course-card">
+                <img src="/css/apt.jpg">
+                <h3 class="sub-name">Aptitude</h3>
+                <!-- <button class="start-btn">Start</button> -->
+                <a href="/app/<%= user.name %>" class="start-btn">Start</a>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="mini_project.js">
+    </script> -->
+    <script>
+
+        document.querySelectorAll('.start-btn').forEach(button => {
+          button.addEventListener('click', async function (e) {
+
+            const subject = this.parentElement.querySelector('h3').textContent;
+            alert("You clicked Start for: " + subject);
+
+        //    document.querySelectorAll('.start-btn').forEach(button => {
+        //         button.addEventListener('click', function() {
+        //             const subject = this.parentElement.querySelector('h2').textContent;
+        //             alert("You clicked Start for: " + subject);
+        //         });
+        //     });
+
+            e.preventDefault();
+      
+            const url = this.getAttribute('href');
+            const parts = url.split('/');
+            const category = parts[1];
+            const username = parts[2];
+           
+            const response = await fetch(`/check/${username}/${category}`);
+            const result = await response.json();
+            console.log(category);
+            console.log(category);
+            console.log(category);
+            console.log(typeof(category));
+            // if (result.exists) {
+               
+            //   alert("You have already written this quiz.");
+            // } else {
+            //   window.location.href = url;
+            // }
+            if (result.exists) {
+  // Show the link before the alert
+        let driveLink;
+        if(category==="daa"){
+            // replace with actual link
+             driveLink = "https://drive.google.com/file/d/1iGeRW2M2yieSxzZvBlg_-oBab2JIJLmg/view?usp=sharing";
+        } 
+        if(category==="os"){
+            // replace with actual link
+             driveLink = "https://drive.google.com/file/d/15YfJhNGBglrG0aL8TWeh2y8x_EUV8gJ5/view?usp=sharing";
+        }  if(category==="ds"){
+            // replace with actual link
+             driveLink = "https://drive.google.com/file/d/1jyJR2daccJ-B3xLLn_VPs8iqEUFOqaCQ/view?usp=sharing";
+        }  if(category==="cn"){
+            // replace with actual link
+             driveLink = "https://drive.google.com/file/d/1Ms10VI4IYbDpykPvc1D1KFlRjf9pf2MC/view?usp=sharing";
+        }if(category==="coa"){
+            // replace with actual link
+             driveLink = "https://drive.google.com/file/d/1HxiInl2SaG3fDz5aOJ7r9ggucy8lUmjp/view?usp=sharing";
+        }if(category==="app"){
+            // replace with actual link
+             driveLink = "https://drive.google.com/file/d/1Kapn8wsxbda2piurY7I-quzfG5u9MWN1/view?usp=sharing";
+        }if(category==="cd"){
+            // replace with actual link
+             driveLink = "https://drive.google.com/file/d/1aCx_K6R8w613tl1OiHWCmI-syU19p-up/view?usp=sharing";
+        }if(category==="coa"){
+            // replace with actual link
+             driveLink = "https://drive.google.com/file/d/1HxiInl2SaG3fDz5aOJ7r9ggucy8lUmjp/view?usp=sharing";
+        }if(category==="c"){
+            // replace with actual link
+             driveLink = "https://drive.google.com/file/d/1Fyt-V2GMDZ5MwY6GvAbNrBPWzvswBAy6/view?usp=sharing";
+        }
+         const openLink = confirm("You have already written this quiz. Click OK to view the answer sheet.");
+
+      if (openLink) {
+         window.open(driveLink, "_blank"); // Opens Google Drive link in a new tab
+        }
+      } else {
+         window.location.href = url; // Proceed to quiz if not attempted
+        }
+
+
+          });
+        });
+      </script>
+
+
+      <!-- <script>
+        document.querySelectorAll(".start-btn").forEach(btn => {
+            btn.addEventListener("click", async function (e) {
+                e.preventDefault();
+                const category = this.getAttribute("data-category");
+                const username = "<%= user.name %>";
+                const url = `/api/hasAttempted/${username}/${category}`;
+    
+                try {
+                    const response = await fetch(url);
+                    const result = await response.json();
+    
+                    if (result.attempted) {
+                        alert("You have already written this test. Here's your answer link:");
+                        window.open("https://drive.google.com/your-answer-link", "_blank");
+                    } else {
+                        window.location.href = `/${category}/${username}`;
+                    }
+                } catch (err) {
+                    console.error("Error checking quiz attempt:", err);
+                }
+            });
+        });
+    </script> -->
+    
+      
+</body>
+</html>

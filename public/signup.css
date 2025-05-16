@@ -1,0 +1,91 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #1e3c72, #2a5298); */
+}
+
+/* Signup Container */
+.signup-container {
+    width: 450px;
+    padding: 55px;
+    background: rgba(56, 54, 54, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+/* Glow effect on hover */
+.signup-container:hover {
+    box-shadow: 0px 4px 20px rgba(14, 7, 22, 0.5);
+}
+
+/* Input group styling */
+.input-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Sign Up Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    background: linear-gradient(135deg, black,white);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
