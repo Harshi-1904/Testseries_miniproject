@@ -1,0 +1,21 @@
+[
+    {
+      "question": "Which of the following page replacement algorithms suffers from Belady's anomaly?",
+      "options": ["Optimal replacement", "LRU", "FIFO", "Both (A) and (C)"],
+      "correctAnswer": "FIFO",
+      "category": "OS"
+    },
+    {
+      "question": "Consider a disk pack with surfaces, tracks per surface, and sectors per track. The capacity of the disk pack and the number of bits required to specify a particular sector in the disk are respectively",
+      "options": ["256 Mbyte, 19 bits", "256 Mbyte, 28 bits", "512 Mbyte, 20 bits", "64 Gbyte, 28 bits"],
+      "correctAnswer": "256 Mbyte, 19 bits",
+      "category": "OS"
+    },
+    {
+        "question": "Consider a disk pack with surfaces, tracks per surface, and sectors per track. The capacity of the disk pack and the number of bits required to specify a particular sector in the disk are respectively",
+        "options": ["256 Mbyte, 19 bits", "256 Mbyte, 28 bits", "512 Mbyte, 20 bits", "64 Gbyte, 28 bits"],
+        "correctAnswer": "256 Mbyte, 19 bits",
+        "category": "CD"
+      }
+  ]
+  

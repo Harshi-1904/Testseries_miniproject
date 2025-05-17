@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= user.name %>'s Profile</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-card">
+            <!-- User Avatar with First Letter -->
+            <div class="avatar">
+                <span><%= user.name.charAt(0).toUpperCase() %></span>
+            </div>
+
+            <h1>Welcome!!</h1>
+            
+            <div class="profile-details">
+                <form action="/profile/<%= user.name %>/update" method="POST">
+                    <label><strong>Name:</strong></label>
+                    <input type="text" name="name" value="<%= user.name %>" required>
+                    
+                    <label><strong>Email:</strong></label>
+                    <input type="email" name="email" value="<%= user.email %>" required>
+                    
+                    <!-- <label><strong>Password (Leave blank to keep current):</strong></label> -->
+                    <!-- <input type="password" name="password"> -->
+
+                    <button type="submit" class="btn update">Update Profile</button>
+                </form>
+            </div>
+
+            <div class="profile-actions">
+                <!-- <a href="/history" class="btn history" style="margin-left:1%;">History</a> -->
+                <a href="/history/<%= user.name %>" class="btn history">History</a>
+
+                <a href="/login" class="btn logout">Logout</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

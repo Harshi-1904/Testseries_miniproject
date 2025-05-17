@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "question": "Which of the following page replacement algorithms suffers from Belady's anomaly?",
+        "options": [
+            "Optimal replacement",
+            "LRU",
+            "FIFO",
+            "Both (A) and (C)"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 2,
+        "question": "Consider a disk pack with surfaces, tracks per surface, and sectors per track. The capacity of the disk pack and the number of bits required to specify a particular sector in the disk are respectively",
+        "options": [
+            "256 Mbyte, 19bits",
+            "256 Mbyte, 28 bits",
+            "512Mbyte, 20bits",
+            "64 Gbyte, 28 bits"
+        ],
+        "correct": 1
+    },
+    {
+        "id": 3,
+        "question": "Consider a system with 3 processes that share 4 instances of the same resource type. The largest value of that will always avoid deadlock is",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 4,
+        "question": "I/O redirection?",
+        "options": [
+            "Implies changing the name of a file",
+            "Can be employed to use an existing file as input file for a program",
+            "Implies connecting programs through a pipe",
+            "None of the above"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 5,
+        "question": "Which one of the following is true for a CPU having a single interrupt request line and a single interrupt grant line?",
+        "options": [
+            "Neither vectored interrupt nor multiple interrupting devices are possible",
+            "Vectored interrupts are not possible but multiple interrupting devices are possible",
+            "Vectored interrupts and multiple interrupting devices are both possible",
+            "Vectored interrupts are possible but multiple interrupting devices are not possible"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 6,
+        "question": "A 1000 Kbyte memory is managed using variable partitions but no compaction. It currently has two partitions of sizes 200 Kbyte and 260 Kbyte respectively. The smallest allocation request in Kbyte that could be denied is for",
+        "options": [
+            "151",
+            "181",
+            "231",
+            "541"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 7,
+        "question": "Locality of reference implies that the page reference being made by a process",
+        "options": [
+            "will always be to the page used in the previous page reference",
+            "is likely to be to one of the pages used in the last few page references",
+            "will always be to one of the pages existing in memory",
+            "will always lead to a page fault"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 8,
+        "question": "Consider an arbitrary set of CPU-bound processes with unequal CPU burst lengths submitted at the same time to a computer system. Which one of the following process scheduling algorithms would minimize the average waiting time in the ready queue?",
+        "options": [
+            "Shortest remaining time first",
+            "Round-robin with the time quantum less than the shortest CPU burst",
+            "Uniform random",
+            "Highest priority first with priority proportional to CPU burst length"
+        ],
+        "correct": 2
+    },
+    {
+        "id": 9,
+        "question": "A critical section is a program segment",
+        "options": [
+            "which should run in a certain amount of time",
+            "which avoids deadlock",
+            "which must be enclosed by a pair of semaphore operations, and V",
+            "where shared resources are accessed"
+        ],
+        "correct": 2
+    }
+]

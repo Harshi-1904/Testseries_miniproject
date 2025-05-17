@@ -1,0 +1,389 @@
+
+.title img {
+    width: 50px;
+    height: 60px;
+    /* align-items: self-start; */
+    /* object-fit: cover; Ensures the image retains its aspect ratio */
+}
+.title {
+    /* background-color:#3c6b82; */
+    background: linear-gradient(to right,#195b7c,#083a53);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 800px;  */
+    height: 12vh;
+    margin-top: 0px;
+    padding: 1rem;
+    
+}
+
+/* Style for the text */
+h1 {
+    color: white;
+    font-size: 3em;
+    text-shadow: 0 0 2em rgba(255, 255, 255, 0.8);
+}
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+     /* Keeps navbar fixed at the top */
+    top:100px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(9, 58, 87);
+    padding: 10px 25px;
+    box-shadow: 0px 3px 8px rgba(255, 255, 255, 0.1);
+    z-index: 1000; /* Ensures navbar stays above other content */
+}
+
+/* Logo Styling */
+.logo i {
+    font-size: 24px;
+    color: white;
+}
+
+/* Navigation links - Positioned to the left */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto; /* Pushes links to the left */
+}
+
+.nav-links li {
+    margin-right: 15px; /* Adds spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+    margin-right: 2rem;
+}
+
+/* Sign Up Button on the Right */
+.signup-btn {
+    background-color: white;
+    color: rgb(9, 58, 87);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Hover Effects */
+.nav-links a:hover {
+    background-color:black;
+    color: white; /* Yellow hover effect */
+}
+
+.signup-btn:hover {
+    background-color: #f1c40f;
+    color: black;
+}
+
+
+
+/* Smaller Signup Button */
+.signup-btn {
+    background-color: black;
+    color:white;
+    padding: 5px 10px;  /* Reduced padding */
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.85em;  /* Reduced font */
+    transition: 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: gray;
+    color: black;
+}
+
+/* home section */
+/* Home Section with Background Image */
+.home {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    background-image: url('/css/home.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Creates a parallax effect */
+    color: white; /* White text for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a shadow for better readability */
+    margin-bottom: 20px;
+    font-family: Arial;
+    
+}
+
+/* Style the text */
+.home h1 {
+    margin-top: 100px;
+    font-size: 3em;
+    margin-bottom: 10px;
+     padding-left: 125px;
+    
+     
+}
+
+.home p {
+    font-size: 1.5em;
+    padding-left: 125px;
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+}
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Courses Section */
+.courses {
+    padding: 60px 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 3.5em;
+    color:#195b7c;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+/* Course Grid */
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 50px;
+    justify-content: center;
+    max-width: 1500x;
+    margin: auto;
+}
+
+/* Course Card Styling */
+.course-card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #222;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50px;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+/* Course Card Image */
+.course-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+/* Course Title Below Image */
+.course-card h3 {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #222;
+}
+
+/* Centering the button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styling the button */
+.view-more-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect */
+.view-more-btn:hover {
+    background-color:#3c8281;
+    color: black;
+    transform: scale(1.1);
+}
+/* About Section - Full Width */
+.about-section {
+    width: 100%; /* Ensures full width */
+    /* background: linear-gradient(135deg, #195b7c, #083a53);  */
+    color: black;
+    padding: 0px 0px; /* Increased padding for better spacing */
+    text-align: center;
+}
+
+/* About Container */
+.about-container {
+    max-width: auto; /* Limits the content width for better readability */
+    margin: auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.about-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraph */
+.about-container p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Explore Button */
+.btn-explore {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.btn-explore:hover {
+    background-color:#3c8281;
+    color: black;
+    transform: scale(1.08);
+}
+
+/* Contact Section - Full Width */
+.contact-section {
+    width: 100%;
+   
+    color:black;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    /* background: rgba(255, 255, 255, 0.1); */
+    border-radius: 12px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraph */
+.contact-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Input Groups */
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    /* background-color: gray; */
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background:black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+/* Button Hover */
+button:hover {
+    background-color:#3c8281;
+    color: black;
+    transform: scale(1.05);
+}
+
+.br
+{
+    border: 0.5px solid  #195b7c;
+}
+/* Footer Section */
+.footer {
+    width: 100%;
+    background: linear-gradient(135deg, #195b7c, #083a53);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+}
